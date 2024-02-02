@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Unity/Scenes/SampleScene.unity
+    path: Assets/Scenes/ARObjectInspector.unity
+    guid: f6d7427c8e0bf48b6b901468ced20861
+  - enabled: 1
+    path: Assets/Scenes/ARObjectPlacement.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 8e22aa4f523f34ac499102aa89408dd8,
