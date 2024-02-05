@@ -84,7 +84,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6714588167927327394}
+      - m_Target: {fileID: 278602022482055407}
         m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
         m_MethodName: RequestExamine
         m_Mode: 1
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6714588167927327394}
+      - m_Target: {fileID: 278602022482055407}
         m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
         m_MethodName: RequestUnexamine
         m_Mode: 1
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 879607305357561309}
   - component: {fileID: 6757121350932049413}
   - component: {fileID: 5327021672167333625}
-  - component: {fileID: 6714588167927327394}
+  - component: {fileID: 278602022482055407}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -269,7 +269,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6714588167927327394
+--- !u!114 &278602022482055407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -281,3 +281,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f77a6bcb14047968a91033e3ad2a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _examineScaleOffset: 0.5
