@@ -18,4 +18,5 @@ public class Examinable : MonoBehaviour
     {
         ExaminableManager.Instance.PerformUnexamine(_parent);
     }
+
 }

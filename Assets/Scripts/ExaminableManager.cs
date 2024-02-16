@@ -25,11 +25,16 @@ public class ExaminableManager : MonoBehaviour
     private Transform _examineTarget;
     [SerializeField]
     private float _rotateSpeed = 1;
+    [SerializeField]
+    private GameObject _mainCamera;
+  
     private Examinable _currentExaminableObject;
     private Vector3 _startingPosition;
     private Quaternion _startingRotation;
     private Vector3 _startingScale;
     private bool _isExamining = false;
+
+    private Transform _currentParent;
 
     private void Update()
     {
@@ -38,7 +43,7 @@ public class ExaminableManager : MonoBehaviour
             if (Input.touchCount > 0)
             {
                 Touch touch = Input.GetTouch(0);
-
+                
                 if (touch.phase == TouchPhase.Moved)
                 {
                     _currentExaminableObject.transform.Rotate(touch.deltaPosition.x * _rotateSpeed, touch.deltaPosition.y * _rotateSpeed, 0);
@@ -59,9 +64,11 @@ public class ExaminableManager : MonoBehaviour
         _currentExaminableObject.transform.localScale = offsetScale;
 
         _currentExaminableObject.transform.position = _examineTarget.transform.position;
+        _currentParent = _currentExaminableObject.transform.parent;
         _currentExaminableObject.transform.parent = _examineTarget;
 
         _isExamining = true;
+
     }
 
     public void PerformUnexamine(Transform parent)
@@ -71,8 +78,36 @@ public class ExaminableManager : MonoBehaviour
         _currentExaminableObject.transform.localScale = _startingScale;
         _currentExaminableObject.transform.parent = parent;
         _currentExaminableObject = null;
+        
 
         _isExamining = false;
+    }
+
+    public void PlaceOnTarget(ToyCube cube)
+    {
+        int cubesPlaced = PlacementManager.Instance.CubesPlaced();
+
+        PlacementManager.Instance.SetCubePosition(cube, cubesPlaced);
+        _currentExaminableObject.transform.rotation = _startingRotation;
+        _currentExaminableObject.transform.localScale = _startingScale;
+
+        PlacementManager.Instance.CubePlaced();
+
+        _currentExaminableObject.transform.parent = _currentParent;
+        _currentExaminableObject = null;
+        _isExamining = false;
+
+        if (cubesPlaced == cube.CubeID())
+        {
+            PlacementManager.Instance.PlacedCorrectly();
+            cube.ChangeEmission(true);
+        }
+
+        if (PlacementManager.Instance.CubesPlaced() == 3)
+        {
+            PlacementManager.Instance.AreCubesPlacedCorrectly();
+        }
+        
     }
 
 }

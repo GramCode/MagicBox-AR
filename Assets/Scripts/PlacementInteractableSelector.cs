@@ -14,7 +14,7 @@ public class PlacementInteractableSelector : MonoBehaviour
 
     private void Update()
     {
-        if (Input.touchCount == 0)
+        if (Input.touchCount > 0)
         {
             _index++;
 
