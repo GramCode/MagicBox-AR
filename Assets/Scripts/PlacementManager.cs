@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.AR;
+using UnityEngine.Events;
 
 public class PlacementManager : MonoBehaviour
 {
@@ -31,6 +32,8 @@ public class PlacementManager : MonoBehaviour
     private Vector3[] _originPosition = new Vector3[3];
     private ToyCube[] _cubes = new ToyCube[3];
 
+    public UnityEvent gameIsWon;
+
     public void CubePlaced()
     {
         _cubesPlaced++;
@@ -50,7 +53,7 @@ public class PlacementManager : MonoBehaviour
         }
         else if (_cubesPlaced == AMOUNTOFTARGETS && _placedCorrectly == AMOUNTOFTARGETS)
         {
-            AnimationManager.Instance.OpenLid();
+            GameComplete();
         }
     }
 
@@ -66,6 +69,12 @@ public class PlacementManager : MonoBehaviour
         {
             cube.ChangeEmission(false);
         }
+    }
+
+    private void GameComplete()
+    {
+        //AnimationManager.Instance.OpenLid();
+        gameIsWon.Invoke();
     }
 
     public void PlacedCorrectly()
@@ -91,7 +100,6 @@ public class PlacementManager : MonoBehaviour
 
     private void ResetCubesPostition()
     {
-        print("------ Reseting cubes position -------");
         int index = 0;
         foreach (var cube in _cubes)
         {
@@ -108,9 +116,6 @@ public class PlacementManager : MonoBehaviour
 
             if (cubeSeletor != null)
                 cubeSeletor.enabled = true;
-
-            print("------ AR Selection for cube " + cube.transform.parent.name + " is enabled " + cubeSeletor.enabled + " -------");
-            print("------ Cube parent " + cube.transform.parent.name + " ------");
         }
     }
 }
