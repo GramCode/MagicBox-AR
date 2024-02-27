@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Framework/DesktopModeScene.unity
+    guid: 04b09aade7ce64581bddc6a04d87ffeb
+  - enabled: 1
     path: Assets/Scenes/SceneSelector.unity
     guid: 5a1169c365f3c4abe82a322207ca36a2
   - enabled: 1

@@ -913,8 +913,8 @@ GameObject:
   - component: {fileID: 1871644746891125083}
   - component: {fileID: 1871644746892092315}
   - component: {fileID: 1871644746897247899}
-  - component: {fileID: 9178565076492099452}
   - component: {fileID: 4400453222628530541}
+  - component: {fileID: 7009894563105720027}
   m_Layer: 0
   m_Name: Rubic Cube Solved
   m_TagString: Untagged
@@ -1011,20 +1011,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &9178565076492099452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871644746889837915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4f77a6bcb14047968a91033e3ad2a6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _examineScaleOffset: 1
-  _parent: {fileID: 4812218656415979348}
 --- !u!65 &4400453222628530541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1046,6 +1032,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.10930056, y: 0.1093004, z: 0.109300435}
   m_Center: {x: -8.4703295e-22, y: -0.0000000018626443, z: 4.2351647e-22}
+--- !u!114 &7009894563105720027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871644746889837915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0faab282c87fb436e9773aaa0d67d04f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _examineScaleOffset: 1
+  _parent: {fileID: 0}
 --- !u!1 &2579548228286511277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,8 +1373,8 @@ GameObject:
   - component: {fileID: 1425487892603976992}
   - component: {fileID: 652142170120816723}
   - component: {fileID: 3769033289948136708}
-  - component: {fileID: 4969533753594040719}
-  - component: {fileID: 3249840023669366262}
+  - component: {fileID: 5382936060605200081}
+  - component: {fileID: 2108981067148262262}
   m_Layer: 0
   m_Name: Letters_Cube 7
   m_TagString: ToyCube
@@ -1468,7 +1468,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.082579955, y: 0.082579955, z: 0.082579955}
   m_Center: {x: 0.00000007636845, y: 0, z: 0}
---- !u!114 &4969533753594040719
+--- !u!114 &5382936060605200081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1477,12 +1477,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3793809419489436674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4f77a6bcb14047968a91033e3ad2a6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0faab282c87fb436e9773aaa0d67d04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _examineScaleOffset: 1.3
-  _parent: {fileID: 9211244649252321678}
---- !u!114 &3249840023669366262
+  _examineScaleOffset: 1
+  _parent: {fileID: 0}
+--- !u!114 &2108981067148262262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1491,11 +1491,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3793809419489436674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dc15bc0051a746e0a4411598196237a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5199e9dee72a346d1ac454500f0c2968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 1
-  _emissionColor: {r: 0, g: 0.12156863, b: 0.7490196, a: 0}
+  _id: 0
+  _emissionColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &4128322144388223049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,7 +1686,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5618836307736375115}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
         m_MethodName: RequestExamine
         m_Mode: 1
@@ -1701,7 +1701,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7401164254151961640}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToyCube, Assembly-CSharp
         m_MethodName: PlaceObject
         m_Mode: 1
@@ -1862,7 +1862,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7914961911380193293}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
         m_MethodName: RequestExamine
         m_Mode: 1
@@ -1877,7 +1877,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 269390662979160148}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToyCube, Assembly-CSharp
         m_MethodName: PlaceObject
         m_Mode: 1
@@ -2017,10 +2017,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4658391086623450177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5aba67d032c14f92b9b102c47c086ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cf2ef515aae149f6a3bee8dfbf655cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _anim: {fileID: 1506277823454645837}
 --- !u!1 &5024467335344503193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,7 +2210,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4969533753594040719}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
         m_MethodName: RequestExamine
         m_Mode: 1
@@ -2226,7 +2225,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3249840023669366262}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToyCube, Assembly-CSharp
         m_MethodName: PlaceObject
         m_Mode: 1
@@ -2635,7 +2634,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9178565076492099452}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
         m_MethodName: RequestExamine
         m_Mode: 1
@@ -2650,7 +2649,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9178565076492099452}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
         m_MethodName: RequestUnexamine
         m_Mode: 1
@@ -2831,8 +2830,8 @@ GameObject:
   - component: {fileID: 7848517486350016618}
   - component: {fileID: 7848517486348919466}
   - component: {fileID: 7898583421157274945}
-  - component: {fileID: 7914961911380193293}
-  - component: {fileID: 269390662979160148}
+  - component: {fileID: 4288944268436187209}
+  - component: {fileID: 2644708796512310664}
   m_Layer: 0
   m_Name: Letters_Cube 5
   m_TagString: ToyCube
@@ -2926,7 +2925,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08290645, y: 0.08257997, z: 0.08290663}
   m_Center: {x: 0.000000033527613, y: 0, z: 0.000000026077032}
---- !u!114 &7914961911380193293
+--- !u!114 &4288944268436187209
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2935,12 +2934,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7848517486351121514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4f77a6bcb14047968a91033e3ad2a6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0faab282c87fb436e9773aaa0d67d04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _examineScaleOffset: 1.3
-  _parent: {fileID: 7769148579222710642}
---- !u!114 &269390662979160148
+  _examineScaleOffset: 1
+  _parent: {fileID: 0}
+--- !u!114 &2644708796512310664
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2949,11 +2948,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7848517486351121514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dc15bc0051a746e0a4411598196237a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5199e9dee72a346d1ac454500f0c2968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  _emissionColor: {r: 0.07450981, g: 0.94509804, b: 0, a: 0}
+  _emissionColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &8101481189132696611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,7 +2963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6639671811010511195}
   - component: {fileID: 1474207676229829331}
-  - component: {fileID: 5815597921087810709}
+  - component: {fileID: 8364838304159993854}
   m_Layer: 0
   m_Name: GreenTarget
   m_TagString: PlacingTarget
@@ -3008,7 +3007,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05, y: 0.045834467, z: 0.05}
   m_Center: {x: 0, y: 0.031307578, z: 0}
---- !u!114 &5815597921087810709
+--- !u!114 &8364838304159993854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3017,7 +3016,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8101481189132696611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 092caf565c2044f31b19d3e3e502cd04, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bc6197761b2b4d6aa92cb70f8bb1512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8245871094805598803
@@ -3030,7 +3029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4790106453690685500}
   - component: {fileID: 883839020002140080}
-  - component: {fileID: 2608264016667675202}
+  - component: {fileID: 9212789498106633994}
   m_Layer: 0
   m_Name: BlueTarget
   m_TagString: PlacingTarget
@@ -3074,7 +3073,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05, y: 0.045834467, z: 0.05}
   m_Center: {x: 0, y: 0.031307578, z: 0}
---- !u!114 &2608264016667675202
+--- !u!114 &9212789498106633994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3083,7 +3082,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8245871094805598803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 092caf565c2044f31b19d3e3e502cd04, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bc6197761b2b4d6aa92cb70f8bb1512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8288341621014110275
@@ -3096,7 +3095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2524666441818047677}
   - component: {fileID: 5194367535443807922}
-  - component: {fileID: 7870651935226663826}
+  - component: {fileID: 7698424344724588796}
   m_Layer: 0
   m_Name: RedTarget
   m_TagString: PlacingTarget
@@ -3140,7 +3139,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05, y: 0.045834467, z: 0.05}
   m_Center: {x: 0, y: 0.031307578, z: 0}
---- !u!114 &7870651935226663826
+--- !u!114 &7698424344724588796
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3149,7 +3148,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8288341621014110275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 092caf565c2044f31b19d3e3e502cd04, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bc6197761b2b4d6aa92cb70f8bb1512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8309455118786422604
@@ -3272,24 +3271,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8309455118786422604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccd34c0d3efec4115829bdfa47ca265d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b37124f5b8f546a689737ec78198443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameIsWon:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 926728369187733971}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1506277823454645837}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
@@ -3300,7 +3287,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Open
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &9136348269878068801
 GameObject:
@@ -3314,8 +3301,8 @@ GameObject:
   - component: {fileID: 9136348269879073345}
   - component: {fileID: 9136348269880072321}
   - component: {fileID: 6806359035275371694}
-  - component: {fileID: 5618836307736375115}
-  - component: {fileID: 7401164254151961640}
+  - component: {fileID: 5675361832302957173}
+  - component: {fileID: 6419657437588889874}
   m_Layer: 0
   m_Name: Letters_Cube 2
   m_TagString: ToyCube
@@ -3409,7 +3396,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.082579955, y: 0.082579955, z: 0.082579955}
   m_Center: {x: 0.00000007636845, y: 0, z: 0}
---- !u!114 &5618836307736375115
+--- !u!114 &5675361832302957173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3418,12 +3405,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 9136348269878068801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4f77a6bcb14047968a91033e3ad2a6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0faab282c87fb436e9773aaa0d67d04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _examineScaleOffset: 1.3
-  _parent: {fileID: 3845392825669173529}
---- !u!114 &7401164254151961640
+  _examineScaleOffset: 1
+  _parent: {fileID: 0}
+--- !u!114 &6419657437588889874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3432,11 +3419,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9136348269878068801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dc15bc0051a746e0a4411598196237a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5199e9dee72a346d1ac454500f0c2968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 2
-  _emissionColor: {r: 0.9254902, g: 0, b: 0, a: 0}
+  _id: 0
+  _emissionColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &9159018647574194211
 GameObject:
   m_ObjectHideFlags: 0
