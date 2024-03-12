@@ -22,6 +22,8 @@ public class UIManager : MonoBehaviour
     private GameObject _addButton;
     [SerializeField]
     private GameObject _removeButton;
+    [SerializeField]
+    private GameObject _examineButton;
 
     private int _modelsPlaced;
     private int _currentButtonID;
@@ -43,31 +45,8 @@ public class UIManager : MonoBehaviour
         _buttons[_currentButtonID].SetActive(false);
     }
 
-    private bool AnyButtonToShow()
-    {
-        bool anyButtonActive = false;
-
-        foreach (var button in _buttons)
-        {
-            if (button.activeInHierarchy == true)
-            {
-                anyButtonActive = true;
-            }
-
-        }
-
-        return anyButtonActive;
-    }
-
     public void DisplayAddButton()
     {
-        /*
-        if (AnyButtonToShow() == true)
-        {
-            _addButton.SetActive(true);
-        }
-        */
-
         if (_modelsPlaced < 3)
         {
             _addButton.SetActive(true);

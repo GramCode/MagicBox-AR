@@ -67,4 +67,8 @@ public class Vehicle : MonoBehaviour
         UIManager.Instance.HideRemoveButton();
     }
 
+    public void TrackablePlanes(bool areEnabled)
+    {
+        DesktopManager.Instance.PlanesVisible(areEnabled);
+    }
 }

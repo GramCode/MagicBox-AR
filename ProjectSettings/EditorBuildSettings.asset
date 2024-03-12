@@ -6,20 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Framework/MenuScene.unity
+    guid: c945e20246d0149c2b68038652a8900a
+  - enabled: 1
     path: Assets/Scenes/Framework/DesktopModeScene.unity
     guid: 04b09aade7ce64581bddc6a04d87ffeb
-  - enabled: 1
-    path: Assets/Scenes/SceneSelector.unity
-    guid: 5a1169c365f3c4abe82a322207ca36a2
-  - enabled: 1
-    path: Assets/Scenes/ARObjectPlacement.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Scenes/ARObjectInspector.unity
-    guid: f6d7427c8e0bf48b6b901468ced20861
-  - enabled: 1
-    path: Assets/Scenes/MagicBoxScene.unity
-    guid: 1fb20e712e8974301b72a49a75bc7b62
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 8e22aa4f523f34ac499102aa89408dd8,
       type: 2}
